@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8eee8">
+<title>إلى تقوى، بكل الحب</title>
+<style>
+:root{--rose:#bd786b;--rose-dark:#8c5148;--cream:#fff9f3;--blush:#f5dfd5;--sage:#8b9b79;--ink:#573e36}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f8eee8;color:var(--ink);font-family:"Tahoma","Arial",sans-serif;line-height:1.9}
+button{font:inherit;cursor:pointer}
+.page{min-height:100vh;overflow:hidden;position:relative;background:radial-gradient(ellipse at 15% 20%,#fffaf4 0,transparent 35%),radial-gradient(ellipse at 85% 75%,#efd4ca 0,transparent 35%),linear-gradient(145deg,#fbf3ed,#f4e1d8)}
+.decor{position:fixed;inset:0;pointer-events:none;overflow:hidden;opacity:.75}
+.flower{position:absolute;font-size:clamp(20px,4vw,38px);animation:float 7s ease-in-out infinite;filter:drop-shadow(0 4px 5px #d9a79a55)}
+.flower:nth-child(1){top:8%;left:7%}.flower:nth-child(2){top:25%;right:5%;animation-delay:-2s}.flower:nth-child(3){bottom:13%;left:10%;animation-delay:-4s}.flower:nth-child(4){bottom:28%;right:8%;animation-delay:-1s}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-13px) rotate(6deg)}}
+main{position:relative;z-index:1;max-width:780px;margin:auto;padding:26px 18px 56px}
+.kicker{text-align:center;color:var(--rose-dark);letter-spacing:2px;font-size:.85rem;margin:10px 0}
+h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;line-height:1.45}
+h1{font-size:clamp(2.3rem,8vw,4.7rem);text-align:center;margin:0;color:var(--rose-dark)}
+.subtitle{text-align:center;max-width:500px;margin:8px auto 25px;font-size:1.05rem}
+.garden{text-align:center;min-height:350px;display:grid;place-items:center}
+.gift-wrap{position:relative;width:min(310px,82vw);padding-top:32px}
+.gift{width:100%;height:205px;position:relative;border-radius:8px 8px 15px 15px;background:linear-gradient(130deg,#dba99b,#c98579 55%,#b96e64);box-shadow:0 22px 35px #8c51482e;display:grid;place-items:center;border:1px solid #b9796d}
+.gift:before{content:"";position:absolute;inset:0 auto 0 43%;width:15%;background:linear-gradient(90deg,#f1d4a0,#ffebbd,#d7ad70)}
+.gift:after{content:"";position:absolute;left:0;right:0;top:0;height:28px;background:#dca99a;border-bottom:1px solid #b9796d}
+.lid{position:absolute;z-index:2;top:13px;left:-5%;width:110%;height:55px;border-radius:8px;background:linear-gradient(135deg,#e8b9aa,#cf8d80);box-shadow:0 8px 12px #75473d25;transform-origin:12% 90%;transition:transform 1s ease,opacity .7s}
+.bow{position:absolute;z-index:3;top:-2px;left:42%;width:58px;height:40px}
+.bow:before,.bow:after{content:"";position:absolute;width:28px;height:24px;border:7px solid #f3d7a1;border-radius:50% 50% 8% 50%;transform:rotate(24deg)}
+.bow:after{left:23px;transform:scaleX(-1) rotate(24deg)}
+.gift-tag{position:absolute;z-index:4;top:72px;right:18px;background:#fff1df;padding:9px 15px;border-radius:3px;box-shadow:0 3px 9px #693e3425;transform:rotate(4deg);font-size:1.1rem}
+.gift-heart{position:absolute;z-index:4;font-size:30px;color:#ffe7c0;top:115px;left:calc(50% - 15px)}
+.open-btn,.pill{border:0;background:var(--rose-dark);color:white;border-radius:999px;padding:12px 25px;box-shadow:0 7px 16px #8c51482b;transition:transform .2s,background .2s}
+.open-btn{margin-top:27px}
+.open-btn:hover,.pill:hover{transform:translateY(-2px);background:#6f3e37}
+.hint{font-size:.85rem;color:#896a60;margin:10px 0 0}
+.opened .lid{transform:translate(-8px,-65px) rotate(-18deg);opacity:.15}
+.opened .bow{transform:translate(-15px,-58px) rotate(-18deg);opacity:0;transition:all .5s}
+.opened .gift-tag,.opened .gift-heart{opacity:0;transition:opacity .3s}
+section{margin:34px 0;scroll-margin-top:20px}
+.paper{position:relative;background:linear-gradient(135deg,#fffaf3,#fff4e8);border:1px solid #e9cfc1;border-radius:5px;padding:clamp(23px,5vw,43px);box-shadow:0 16px 40px #75473d12}
+.paper:before{content:"";position:absolute;inset:9px;border:1px solid #f0dfd4;pointer-events:none}
+.paper>*{position:relative}
+h2{text-align:center;color:var(--rose-dark);font-size:clamp(1.6rem,5vw,2.25rem);margin:0 0 16px}
+.heart{text-align:center;color:var(--rose);font-size:1.4rem;margin:0 0 12px}
+.letter p{margin:0 0 15px}
+.signature{text-align:center;color:var(--rose-dark);font-weight:bold;margin-top:24px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{border:1px solid #e8cfc1;background:#fff8f1;border-radius:13px;padding:18px 13px;text-align:center;min-height:125px;box-shadow:0 8px 18px #75473d0d}
+.card .icon{font-size:1.8rem;display:block;margin-bottom:5px}
+.card strong{display:block;color:var(--rose-dark);margin-bottom:4px}
+.card p{font-size:.92rem;margin:0}
+.blessing{background:linear-gradient(140deg,#f3dfd5,#fff7ee)}
+.envelope-zone{text-align:center}
+.envelope{margin:15px auto 20px;width:min(280px,80%);height:170px;position:relative;background:#dba89a;border-radius:8px;box-shadow:0 14px 25px #75473d20;overflow:hidden;cursor:pointer;border:0;display:block}
+.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 49%,#c98579 50%),linear-gradient(215deg,transparent 49%,#e7b9aa 50%)}
+.envelope:after{content:"";position:absolute;top:-1px;left:0;right:0;height:0;border-left:140px solid transparent;border-right:140px solid transparent;border-top:100px solid #edc2b3;transform-origin:top;transition:transform .6s}
+.seal{position:absolute;z-index:2;left:calc(50% - 21px);top:72px;width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:#a95f56;color:#fff0dd;border:2px solid #e6bd91}
+.envelope.open:after{transform:rotateX(180deg);opacity:.6}
+.hidden-note{display:none;text-align:right;margin-top:18px}
+.hidden-note.show{display:block;animation:appear .8s ease both}
+@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.final{text-align:center;padding:34px 20px 18px}
+.final h2{font-size:clamp(2rem,7vw,3.2rem)}
+.final .big-heart{font-size:2rem;color:var(--rose)}
+footer{text-align:center;color:#9a7a70;font-size:.82rem;padding:25px 0 0}
+[hidden]{display:none!important}
+@media(max-width:480px){main{padding:18px 13px 40px}.cards{grid-template-columns:1fr}.card{min-height:auto}.garden{min-height:320px}.gift{height:185px}.paper{padding:24px 20px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="decor" aria-hidden="true"><span class="flower">🌸</span><span class="flower">🌿</span><span class="flower">🌷</span><span class="flower">✿</span></div>
+<main>
+<header>
+<p class="kicker">رسالة صغيرة… بمحبة كبيرة</p>
+<h1>إلى تقوى</h1>
+<p class="subtitle">هناك أشياء كثيرة في قلوبنا، حان الوقت لنقولها لكِ.</p>
+</header>
+<div class="garden" id="garden">
+<div class="gift-wrap">
+<div class="bow" aria-hidden="true"></div>
+<div class="lid" aria-hidden="true"></div>
+<div class="gift" aria-hidden="true"></div>
+<div class="gift-tag">تقوى <span>♡</span></div>
+<div class="gift-heart" aria-hidden="true">♥</div>
+<button class="open-btn" id="openGift">افتحي هديّتكِ ♥</button>
+<p class="hint">شيء صغير جمعناه لكِ من قلوبنا</p>
+</div>
+</div>
+<div id="journey" hidden>
+<section class="paper letter">
+<p class="kicker">رسالة من القلب</p><h2>إلى أختنا الكبرى… وشيء من أمّهاتنا</h2><div class="heart">♥</div>
+<p>يا تقوى، لم تكوني بالنسبة إلينا مجرد بنت خالة؛ كنتِ أختاً كبيرة بقلب أم، وسنداً نطمئن إلى وجوده، وقلباً نجد عنده الحنان والاهتمام.</p>
+<p>حين نحاول أن نتذكر موقفاً واحداً لنقول فيه إنكِ كنتِ معنا، نكتشف أن المشكلة ليست في أننا لا نجد موقفاً، بل في أننا لا نستطيع أن نختار موقفاً واحداً من بين مواقف كثيرة.</p>
+<p>كنتِ معنا في أفراحنا وأحزاننا، في لحظات قوتنا وضعفنا، وفي الأوقات التي احتجنا فيها إلى من يسمعنا أو ينصحنا أو يخاف علينا. لم يكن وجودكِ مرتبطاً بموقف عابر؛ بل كنتِ جزءاً من أيامنا، ومن شعورنا بأن هناك من يهتم لأمرنا.</p>
+<p>ربما اعتدنا وجودكِ إلى درجة أننا لم نخبركِ بما يكفي عن قيمته، لكننا نريدكِ أن تعرفي أن اهتمامكِ ونصائحكِ ووقوفكِ إلى جانبنا تركت أثراً جميلاً في قلوبنا، أثراً لا تستطيع المسافات أن تمحوه.</p>
+<p>واليوم، ونحن نراكِ تبدئين فصلاً جديداً من حياتكِ، نفرح بكِ ومن أجلكِ، ونتمنى أن تكون أيامكِ القادمة مليئة بالمودة والرحمة والطمأنينة. وفي الوقت نفسه، نعرف أننا سنفتقد حديثكِ وضحكتكِ ووجودكِ وتفاصيلكِ الصغيرة التي تعني لنا الكثير.</p>
+<p>لا نريدكِ أن تشعري أن السفر يعني الابتعاد عنّا؛ فستظلين أختنا الكبرى، وجزءاً من حكاياتنا وذكرياتنا، ولكِ في قلوبنا مكان لا يتغير مهما تغيّرت الأماكن.</p>
+<p>شكراً لأنكِ كنتِ معنا، ولأنكِ كنتِ لنا أختاً بقلب أم. شكراً لكل مرة اهتممتِ فيها، ولكل نصيحة، ولكل مرة جعلتِنا نشعر أننا لسنا وحدنا.</p>
+<p>نسأل الله أن يبارك لكِ في زواجكِ، وأن يجمع بينكِ وبين زوجكِ في خير، وأن يملأ بيتكِ حباً وسكينة وبركة، ويحفظكِ أينما كنتِ ويكتب لكِ من السعادة أجملها.</p>
+<p class="signature">نحبكِ يا تقوى، أكثر مما تستطيع الكلمات أن تقول. ♥</p>
+</section>
+<section>
+<h2>أشياء لن ننساها</h2><p class="subtitle">بعض الأشياء لا تحتاج إلى ذكرى واحدة، لأنها تسكن تفاصيل كثيرة.</p>
+<div class="cards">
+<div class="card"><span class="icon">🤍</span><strong>حنانكِ</strong><p>الدفء الذي كان يصل إلينا حتى في أبسط التفاصيل.</p></div>
+<div class="card"><span class="icon">🌿</span><strong>نصائحكِ</strong><p>الكلمات التي كانت ترشدنا لأنكِ تريدين لنا الخير.</p></div>
+<div class="card"><span class="icon">🌷</span><strong>اهتمامكِ</strong><p>سؤالكِ وخوفكِ علينا وحرصكِ على أن نكون بخير.</p></div>
+<div class="card"><span class="icon">🏡</span><strong>وجودكِ</strong><p>ذلك الشعور الجميل بأن لنا دائماً قلباً يقف إلى جانبنا.</p></div>
+</div>
+</section>
+<section class="paper blessing">
+<p class="kicker">إلى حياتكِ الجديدة</p><h2>نتمنى لكِ أياماً تشبه قلبكِ</h2><div class="heart">✿</div>
+<p>يا تقوى، نتمنى أن تكون الحياة الجديدة باباً واسعاً للفرح والسكينة، وأن تجدي في أيامكِ القادمة حباً يطمئن قلبكِ، ورفقةً طيبة، وأحلاماً تتحقق واحدة بعد أخرى.</p>
+<p>كوني سعيدة، واصنعي ذكريات جميلة، ولا تنسي أبداً أن لكِ هنا قلوباً تحبكِ وتدعو لكِ، وبيتاً ستظلين جزءاً منه مهما ابتعدتِ.</p>
+</section>
+<section class="paper envelope-zone">
+<h2>تركنا لكِ شيئاً أخيراً…</h2><p>اضغطي على الظرف لفتح الرسالة المخفية.</p>
+<button class="envelope" id="envelope" aria-label="افتحي الظرف المخفي"><span class="seal">♥</span></button>
+<div class="hidden-note paper" id="hiddenNote">
+<h2>وعدٌ منّا لكِ</h2>
+<p>سنظل نذكركِ في دعائنا، ونحمل محبتكِ معنا، ونفرح لكل فرح يصل إليكِ. سنظل نسأل عنكِ ونشارككِ أخبارنا، لأنكِ لستِ مجرد جزء من أيام مضت؛ أنتِ جزء من عائلتنا ومن قلوبنا.</p>
+<p>قد تتغير المسافات، لكن محبتنا لكِ لن تتغير. كوني مطمئنة يا تقوى، فأنتِ بعيدة عن أعيننا أحياناً، لكنكِ قريبة من قلوبنا دائماً.</p>
+<p class="signature">منّا جميعاً، بكل الحب ♥</p>
+</div>
+</section>
+<section class="final">
+<div class="big-heart">♥</div><h2>ستبقين قريبة… أينما كنتِ</h2>
+<p>إلى تقوى، أختنا الكبرى التي نحبها ونفتخر بها.<br>بارك الله لكِ في حياتكِ الجديدة، وجعل الفرح رفيق أيامكِ.</p>
+<p class="signature">منّا جميعاً، بكل الحب.</p>
+</section>
+<button class="pill" id="backTop" style="display:block;margin:0 auto">عودي إلى البداية ↑</button>
+</div>
+<footer>صُنعت هذه الصفحة بمحبة، لتبقى الكلمات قريبة مهما ابتعدت المسافات.</footer>
+</main>
+</div>
+<script>
+const openGift=document.getElementById('openGift');
+openGift.addEventListener('click',()=>{
+ document.getElementById('garden').classList.add('opened');
+ openGift.textContent='أُهديت لكِ بمحبة ♥';
+ document.getElementById('journey').hidden=false;
+ setTimeout(()=>document.getElementById('journey').scrollIntoView({behavior:'smooth',block:'start'}),450);
+});
+document.getElementById('envelope').addEventListener('click',function(){
+ this.classList.toggle('open');
+ const note=document.getElementById('hiddenNote');
+ note.classList.toggle('show');
+ if(note.classList.contains('show'))setTimeout(()=>note.scrollIntoView({behavior:'smooth',block:'center'}),250);
+});
+document.getElementById('backTop').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body>
+</html>
